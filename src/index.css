@@ -51,3 +51,26 @@
 p{
   margin: 15px 0px;
 }
+.LoadingAnimation {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.LoadingAnimation {
+  animation: LoadingAnimation 0.5s forwards;
+  -webkit-animation: LoadingAnimation 0.5s forwards;
+}
+
+  
+@keyframes LoadingAnimation {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes LoadingAnimation {
+  100% { -webkit-transform: translateX(0%); }
+}
+
+

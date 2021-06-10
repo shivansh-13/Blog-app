@@ -1,7 +1,8 @@
-const BlogList = ({blogProp}) => {
+const BlogList = ({blogProp,title}) => {
     const blog = blogProp;
     return (
         <div className="blog-list">
+       <h1>{title}</h1>
             {blog.map((blog) => (
                 <div className="blog-preview" key={blog.id}>
                     <h2>{blog.title}</h2>
